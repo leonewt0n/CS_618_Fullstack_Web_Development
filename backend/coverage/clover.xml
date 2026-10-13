@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1790553378647" clover="3.2.0">
+  <project timestamp="1790553378647" name="All files">
+    <metrics statements="16" coveredstatements="9" conditionals="4" coveredconditionals="0" methods="10" coveredmethods="3" elements="30" coveredelements="12" complexity="0" loc="16" ncloc="16" packages="3" files="3" classes="3"/>
+    <package name="db">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="init.js" path="/Users/leo/Ball_State_University_Portfolio/ReactFullStack/backend/src/db/init.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="db.models">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="post.js" path="/Users/leo/Ball_State_University_Portfolio/ReactFullStack/backend/src/db/models/post.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="services">
+      <metrics statements="9" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="8" coveredmethods="1"/>
+      <file name="posts.js" path="/Users/leo/Ball_State_University_Portfolio/ReactFullStack/backend/src/services/posts.js">
+        <metrics statements="9" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="8" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
