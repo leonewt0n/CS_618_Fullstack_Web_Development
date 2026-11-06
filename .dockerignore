@@ -1,0 +1,13 @@
+node_modules
+dist
+.git
+.github
+.husky
+Modern-Full-Stack-React-Projects
+*.md
+.env
+.env.*
+coverage
+flake.nix
+flake.lock
+.direnv
