@@ -60,7 +60,7 @@
           echo " 🍏 Apple Silicon Dev Shell Active"
           echo " Node.js: $(node --version)"
           echo " npm:     $(npm --version)"
-          echo " MongoDB running on 127.0.0.1:27017 "
+          echo " MongoDB running on 127.0.0.1:27017  "
           echo "========================================="
         '';
 
