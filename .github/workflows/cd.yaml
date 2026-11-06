@@ -54,4 +54,4 @@ jobs:
           service: blog-frontend
           image: docker.io/${{ secrets.DOCKERHUB_USERNAME }}/blog-frontend:latest
           region: ${{ secrets.GOOGLECLOUD_REGION }}
-          port: '8080'
+          port: '80'
