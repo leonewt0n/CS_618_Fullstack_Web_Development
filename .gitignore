@@ -7,6 +7,9 @@ Icon?
 .Spotlight-V100
 .Trashes
 
+# Book reference clone (keep local only; see PacktPublishing/Modern-Full-Stack-React-Projects)
+Modern-Full-Stack-React-Projects/
+
 # Dependencies
 node_modules/
 /.pnp
