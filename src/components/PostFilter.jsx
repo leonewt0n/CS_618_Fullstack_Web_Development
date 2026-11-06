@@ -14,6 +14,7 @@ export function PostFilter({ field, value, onChange }) {
     </div>
   )
 }
+
 PostFilter.propTypes = {
   field: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,

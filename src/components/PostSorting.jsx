@@ -36,6 +36,7 @@ export function PostSorting({
     </div>
   )
 }
+
 PostSorting.propTypes = {
   fields: PropTypes.arrayOf(PropTypes.string).isRequired,
   value: PropTypes.string.isRequired,
