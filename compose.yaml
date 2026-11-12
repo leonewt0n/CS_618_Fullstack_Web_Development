@@ -8,8 +8,7 @@ services:
     build: backend/
     environment:
       - PORT=3001
-      - 'DATABASE_URL=mongodb://blog-database:27017/blog'
-      - JWT_SECRET=a-string-secret-at-least-256-bits-long
+      - DATABASE_URL=mongodb://host.docker.internal:27017/blog
     ports:
       - '3001:3001'
     depends_on:
@@ -18,7 +17,7 @@ services:
     build:
       context: .
       args:
-        VITE_BACKEND_URL: 'http://localhost:3001/api/v1'
+        VITE_BACKEND_URL: http://localhost:3001/api/v1
     ports:
       - '3000:80'
     depends_on:

@@ -28,5 +28,3 @@ export function userRoutes(app) {
     return res.status(200).send(userInfo)
   })
 }
-
-

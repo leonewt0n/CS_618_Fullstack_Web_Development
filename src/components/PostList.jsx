@@ -5,7 +5,7 @@ import { Post } from './Post.jsx'
 export function PostList({ posts = [] }) {
   return (
     <div>
-      {posts.map((post) => (
+      {posts.map((post, index) => (
         <Fragment key={post._id}>
           <Post {...post} />
           <hr />
