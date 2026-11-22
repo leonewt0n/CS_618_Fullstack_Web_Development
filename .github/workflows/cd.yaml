@@ -26,25 +26,20 @@ jobs:
           context: ./backend
           file: ./backend/Dockerfile
           push: true
-          platforms: linux/amd64
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/blog-backend:latest
       - id: deploy-backend
         name: Deploy backend
         uses: google-github-actions/deploy-cloudrun@v1
         with:
           service: blog-backend
-          image: docker.io/${{ secrets.DOCKERHUB_USERNAME }}/blog-backend:latest
+          image: ${{ secrets.DOCKERHUB_USERNAME }}/blog-backend:latest
           region: ${{ secrets.GOOGLECLOUD_REGION }}
-          env_vars: |
-            DATABASE_URL=${{ secrets.DATABASE_URL }}
-            JWT_SECRET=${{ secrets.JWT_SECRET }}
       - name: Build and push frontend image
         uses: docker/build-push-action@v4
         with:
           context: .
           file: ./Dockerfile
           push: true
-          platforms: linux/amd64
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/blog-frontend:latest
           build-args: VITE_BACKEND_URL=${{ steps.deploy-backend.outputs.url }}/api/v1
       - id: deploy-frontend
@@ -52,7 +47,5 @@ jobs:
         uses: google-github-actions/deploy-cloudrun@v1
         with:
           service: blog-frontend
-          image: docker.io/${{ secrets.DOCKERHUB_USERNAME }}/blog-frontend:latest
+          image: ${{ secrets.DOCKERHUB_USERNAME }}/blog-frontend:latest
           region: ${{ secrets.GOOGLECLOUD_REGION }}
-          port: '80'
-          flags: '--allow-unauthenticated'

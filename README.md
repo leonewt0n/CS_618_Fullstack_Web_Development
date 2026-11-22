@@ -1,6 +1,6 @@
-# Modern Full-Stack React Projects / Chapter 10
+# Modern Full-Stack React Projects / Chapter 13
 
-_Aggregating and Visualizing Statistics Using MongoDB and Victory_
+_Building an Event-Based Backend Using Express and Socket.IO_
 
 ## Requirements
 
@@ -33,13 +33,6 @@ To start the app in development mode, run the following command:
 npm run dev
 ```
 
-To start it in production mode, build it first, then start it as follows:
-
-```bash
-npm run build
-npm start
-```
-
 ## Using Docker Compose
 
 To run a database service, the backend and the frontend in Docker Compose, execute the following command:
@@ -53,25 +46,20 @@ docker compose up
 To build the Docker image for the frontend, run the following command:
 
 ```bash
-docker build -t blog-frontend .
+docker build -t chat-frontend .
 ```
 
 Then, you can start a new container, as follows:
 
 ```bash
-docker run -it -p 3000:80 blog-frontend
+docker run -it -p 3000:80 chat-frontend
 ```
 
-## Running Playwright tests
+## Setting the JWT for Socket.IO
 
-To run the Playwright tests for this project in headless mode, execute the following command:
+To make Socket.IO authentication work, the JWT needs to be manually set in `localStorage`, as follows:
 
-```bash
-npx playwright test
-```
-
-The test report can then be viewed as follows:
-
-```bash
-npx playwright show-report
-```
+1. Sign up and log in normally using the existing blog frontend.
+2. Then, check the **Network** tab of the inspector to find the `/login` request with a token inside the response.
+3. Copy this token and add it to `localStorage`, by running the following command in the browser console: `localStorage.setItem('token', '<JWT>')` (replacing `<JWT>` with the copied token).
+4. Refresh the page, and now it should work!

@@ -1,6 +1,6 @@
-# Modern Full-Stack React Projects / Chapter 10 / Backend
+# Modern Full-Stack React Projects / Chapter 13 / Backend
 
-_Aggregating and Visualizing Statistics Using MongoDB and Victory_
+_Building an Event-Based Backend Using Express and Socket.IO_
 
 ## Requirements
 
@@ -54,13 +54,13 @@ npm test
 To build the Docker image for the backend, run the following command:
 
 ```bash
-docker build -t blog-backend .
+docker build -t chat-backend .
 ```
 
 Then, you can start a new container, as follows:
 
 ```bash
-docker run -it -e PORT=3001 -e DATABASE_URL=mongodb://host.docker.internal:27017/blog -p 3001:3001 blog-backend
+docker run -it -e PORT=3001 -e DATABASE_URL=mongodb://host.docker.internal:27017/chat -p 3001:3001 chat-backend
 ```
 
 Please note that this requires a MongoDB container to be running on port 27017!

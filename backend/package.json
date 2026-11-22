@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
-    "e2e": "node src/e2e.js",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "lint": "eslint src"
   },
@@ -20,7 +19,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.2",
-    "uuid": "^9.0.1"
+    "socket.io": "^4.7.2"
   },
   "devDependencies": {
     "eslint": "^8.54.0",
