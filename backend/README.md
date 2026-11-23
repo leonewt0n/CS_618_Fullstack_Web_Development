@@ -1,6 +1,6 @@
-# Modern Full-Stack React Projects / Chapter 13 / Backend
+# Modern Full-Stack React Projects / Chapter 15 / Backend
 
-_Building an Event-Based Backend Using Express and Socket.IO_
+_Adding Persistence to Socket.IO Using MongoDB_
 
 ## Requirements
 

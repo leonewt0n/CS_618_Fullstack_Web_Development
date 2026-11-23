@@ -1,6 +1,6 @@
-# Modern Full-Stack React Projects / Chapter 13
+# Modern Full-Stack React Projects / Chapter 15
 
-_Building an Event-Based Backend Using Express and Socket.IO_
+_Adding Persistence to Socket.IO Using MongoDB_
 
 ## Requirements
 
@@ -54,12 +54,3 @@ Then, you can start a new container, as follows:
 ```bash
 docker run -it -p 3000:80 chat-frontend
 ```
-
-## Setting the JWT for Socket.IO
-
-To make Socket.IO authentication work, the JWT needs to be manually set in `localStorage`, as follows:
-
-1. Sign up and log in normally using the existing blog frontend.
-2. Then, check the **Network** tab of the inspector to find the `/login` request with a token inside the response.
-3. Copy this token and add it to `localStorage`, by running the following command in the browser console: `localStorage.setItem('token', '<JWT>')` (replacing `<JWT>` with the copied token).
-4. Refresh the page, and now it should work!
